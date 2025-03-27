@@ -1,0 +1,769 @@
+{
+  "annual_data": [
+    {
+      "year": 1880,
+      "anomaly": -0.428016,
+      "moving_avg_5yr": NaN
+    },
+    {
+      "year": 1881,
+      "anomaly": -0.389853,
+      "moving_avg_5yr": NaN
+    },
+    {
+      "year": 1882,
+      "anomaly": -0.404009,
+      "moving_avg_5yr": -0.4565646
+    },
+    {
+      "year": 1883,
+      "anomaly": -0.487285,
+      "moving_avg_5yr": -0.4829354
+    },
+    {
+      "year": 1884,
+      "anomaly": -0.57366,
+      "moving_avg_5yr": -0.5145658
+    },
+    {
+      "year": 1885,
+      "anomaly": -0.55987,
+      "moving_avg_5yr": -0.5522308
+    },
+    {
+      "year": 1886,
+      "anomaly": -0.548005,
+      "moving_avg_5yr": -0.5419726
+    },
+    {
+      "year": 1887,
+      "anomaly": -0.592334,
+      "moving_avg_5yr": -0.5050588
+    },
+    {
+      "year": 1888,
+      "anomaly": -0.435994,
+      "moving_avg_5yr": -0.5220996
+    },
+    {
+      "year": 1889,
+      "anomaly": -0.389091,
+      "moving_avg_5yr": -0.5240294000000001
+    },
+    {
+      "year": 1890,
+      "anomaly": -0.645074,
+      "moving_avg_5yr": -0.5266372
+    },
+    {
+      "year": 1891,
+      "anomaly": -0.557654,
+      "moving_avg_5yr": -0.5658466
+    },
+    {
+      "year": 1892,
+      "anomaly": -0.605373,
+      "moving_avg_5yr": -0.6111934
+    },
+    {
+      "year": 1893,
+      "anomaly": -0.632041,
+      "moving_avg_5yr": -0.5918458
+    },
+    {
+      "year": 1894,
+      "anomaly": -0.615825,
+      "moving_avg_5yr": -0.5601383999999999
+    },
+    {
+      "year": 1895,
+      "anomaly": -0.548336,
+      "moving_avg_5yr": -0.5200391999999999
+    },
+    {
+      "year": 1896,
+      "anomaly": -0.399117,
+      "moving_avg_5yr": -0.5094544
+    },
+    {
+      "year": 1897,
+      "anomaly": -0.404877,
+      "moving_avg_5yr": -0.47893860000000005
+    },
+    {
+      "year": 1898,
+      "anomaly": -0.579117,
+      "moving_avg_5yr": -0.4454252
+    },
+    {
+      "year": 1899,
+      "anomaly": -0.463246,
+      "moving_avg_5yr": -0.45782660000000003
+    },
+    {
+      "year": 1900,
+      "anomaly": -0.380769,
+      "moving_avg_5yr": -0.490207
+    },
+    {
+      "year": 1901,
+      "anomaly": -0.461124,
+      "moving_avg_5yr": -0.5103983999999999
+    },
+    {
+      "year": 1902,
+      "anomaly": -0.566779,
+      "moving_avg_5yr": -0.5690459999999999
+    },
+    {
+      "year": 1903,
+      "anomaly": -0.680074,
+      "moving_avg_5yr": -0.6089362
+    },
+    {
+      "year": 1904,
+      "anomaly": -0.756484,
+      "moving_avg_5yr": -0.6190133999999999
+    },
+    {
+      "year": 1905,
+      "anomaly": -0.58022,
+      "moving_avg_5yr": -0.642612
+    },
+    {
+      "year": 1906,
+      "anomaly": -0.51151,
+      "moving_avg_5yr": -0.6534978
+    },
+    {
+      "year": 1907,
+      "anomaly": -0.684772,
+      "moving_avg_5yr": -0.6518082
+    },
+    {
+      "year": 1908,
+      "anomaly": -0.734503,
+      "moving_avg_5yr": -0.6776684000000001
+    },
+    {
+      "year": 1909,
+      "anomaly": -0.748036,
+      "moving_avg_5yr": -0.725668
+    },
+    {
+      "year": 1910,
+      "anomaly": -0.709521,
+      "moving_avg_5yr": -0.7181122
+    },
+    {
+      "year": 1911,
+      "anomaly": -0.751508,
+      "moving_avg_5yr": -0.696908
+    },
+    {
+      "year": 1912,
+      "anomaly": -0.646993,
+      "moving_avg_5yr": -0.6371796
+    },
+    {
+      "year": 1913,
+      "anomaly": -0.628482,
+      "moving_avg_5yr": -0.5762115999999999
+    },
+    {
+      "year": 1914,
+      "anomaly": -0.449394,
+      "moving_avg_5yr": -0.552932
+    },
+    {
+      "year": 1915,
+      "anomaly": -0.404681,
+      "moving_avg_5yr": -0.5650944
+    },
+    {
+      "year": 1916,
+      "anomaly": -0.63511,
+      "moving_avg_5yr": -0.5624
+    },
+    {
+      "year": 1917,
+      "anomaly": -0.707805,
+      "moving_avg_5yr": -0.5847324
+    },
+    {
+      "year": 1918,
+      "anomaly": -0.61501,
+      "moving_avg_5yr": -0.6122598
+    },
+    {
+      "year": 1919,
+      "anomaly": -0.561056,
+      "moving_avg_5yr": -0.5794612
+    },
+    {
+      "year": 1920,
+      "anomaly": -0.542318,
+      "moving_avg_5yr": -0.5493897999999999
+    },
+    {
+      "year": 1921,
+      "anomaly": -0.471117,
+      "moving_avg_5yr": -0.5388052
+    },
+    {
+      "year": 1922,
+      "anomaly": -0.557448,
+      "moving_avg_5yr": -0.5370884
+    },
+    {
+      "year": 1923,
+      "anomaly": -0.562087,
+      "moving_avg_5yr": -0.5266
+    },
+    {
+      "year": 1924,
+      "anomaly": -0.552472,
+      "moving_avg_5yr": -0.509334
+    },
+    {
+      "year": 1925,
+      "anomaly": -0.489876,
+      "moving_avg_5yr": -0.49447260000000004
+    },
+    {
+      "year": 1926,
+      "anomaly": -0.384787,
+      "moving_avg_5yr": -0.4802906
+    },
+    {
+      "year": 1927,
+      "anomaly": -0.483141,
+      "moving_avg_5yr": -0.49737620000000005
+    },
+    {
+      "year": 1928,
+      "anomaly": -0.491177,
+      "moving_avg_5yr": -0.4834168
+    },
+    {
+      "year": 1929,
+      "anomaly": -0.6379,
+      "moving_avg_5yr": -0.4808582
+    },
+    {
+      "year": 1930,
+      "anomaly": -0.420079,
+      "moving_avg_5yr": -0.47216820000000004
+    },
+    {
+      "year": 1931,
+      "anomaly": -0.371994,
+      "moving_avg_5yr": -0.487878
+    },
+    {
+      "year": 1932,
+      "anomaly": -0.439691,
+      "moving_avg_5yr": -0.444465
+    },
+    {
+      "year": 1933,
+      "anomaly": -0.569726,
+      "moving_avg_5yr": -0.454005
+    },
+    {
+      "year": 1934,
+      "anomaly": -0.420835,
+      "moving_avg_5yr": -0.4654876
+    },
+    {
+      "year": 1935,
+      "anomaly": -0.467779,
+      "moving_avg_5yr": -0.441856
+    },
+    {
+      "year": 1936,
+      "anomaly": -0.429407,
+      "moving_avg_5yr": -0.3941454
+    },
+    {
+      "year": 1937,
+      "anomaly": -0.321533,
+      "moving_avg_5yr": -0.3701266
+    },
+    {
+      "year": 1938,
+      "anomaly": -0.331173,
+      "moving_avg_5yr": -0.307093
+    },
+    {
+      "year": 1939,
+      "anomaly": -0.300741,
+      "moving_avg_5yr": -0.22899219999999998
+    },
+    {
+      "year": 1940,
+      "anomaly": -0.152611,
+      "moving_avg_5yr": -0.20510919999999996
+    },
+    {
+      "year": 1941,
+      "anomaly": -0.038903,
+      "moving_avg_5yr": -0.1799118
+    },
+    {
+      "year": 1942,
+      "anomaly": -0.202118,
+      "moving_avg_5yr": -0.126279
+    },
+    {
+      "year": 1943,
+      "anomaly": -0.205186,
+      "moving_avg_5yr": -0.1221576
+    },
+    {
+      "year": 1944,
+      "anomaly": -0.032577,
+      "moving_avg_5yr": -0.178245
+    },
+    {
+      "year": 1945,
+      "anomaly": -0.132004,
+      "moving_avg_5yr": -0.206684
+    },
+    {
+      "year": 1946,
+      "anomaly": -0.31934,
+      "moving_avg_5yr": -0.23819020000000002
+    },
+    {
+      "year": 1947,
+      "anomaly": -0.344313,
+      "moving_avg_5yr": -0.3081596
+    },
+    {
+      "year": 1948,
+      "anomaly": -0.362717,
+      "moving_avg_5yr": -0.374127
+    },
+    {
+      "year": 1949,
+      "anomaly": -0.382424,
+      "moving_avg_5yr": -0.3721934
+    },
+    {
+      "year": 1950,
+      "anomaly": -0.461841,
+      "moving_avg_5yr": -0.356734
+    },
+    {
+      "year": 1951,
+      "anomaly": -0.309672,
+      "moving_avg_5yr": -0.3204526
+    },
+    {
+      "year": 1952,
+      "anomaly": -0.267016,
+      "moving_avg_5yr": -0.325936
+    },
+    {
+      "year": 1953,
+      "anomaly": -0.18131,
+      "moving_avg_5yr": -0.32136820000000005
+    },
+    {
+      "year": 1954,
+      "anomaly": -0.409841,
+      "moving_avg_5yr": -0.3580992
+    },
+    {
+      "year": 1955,
+      "anomaly": -0.439002,
+      "moving_avg_5yr": -0.35273659999999996
+    },
+    {
+      "year": 1956,
+      "anomaly": -0.493327,
+      "moving_avg_5yr": -0.35392
+    },
+    {
+      "year": 1957,
+      "anomaly": -0.240203,
+      "moving_avg_5yr": -0.3182202
+    },
+    {
+      "year": 1958,
+      "anomaly": -0.187227,
+      "moving_avg_5yr": -0.2828358
+    },
+    {
+      "year": 1959,
+      "anomaly": -0.231342,
+      "moving_avg_5yr": -0.22741039999999998
+    },
+    {
+      "year": 1960,
+      "anomaly": -0.26208,
+      "moving_avg_5yr": -0.22046099999999996
+    },
+    {
+      "year": 1961,
+      "anomaly": -0.2162,
+      "moving_avg_5yr": -0.2215134
+    },
+    {
+      "year": 1962,
+      "anomaly": -0.205456,
+      "moving_avg_5yr": -0.2658816
+    },
+    {
+      "year": 1963,
+      "anomaly": -0.192489,
+      "moving_avg_5yr": -0.289825
+    },
+    {
+      "year": 1964,
+      "anomaly": -0.453183,
+      "moving_avg_5yr": -0.31101039999999996
+    },
+    {
+      "year": 1965,
+      "anomaly": -0.381797,
+      "moving_avg_5yr": -0.3327754
+    },
+    {
+      "year": 1966,
+      "anomaly": -0.322127,
+      "moving_avg_5yr": -0.3621698
+    },
+    {
+      "year": 1967,
+      "anomaly": -0.314281,
+      "moving_avg_5yr": -0.3128554
+    },
+    {
+      "year": 1968,
+      "anomaly": -0.339461,
+      "moving_avg_5yr": -0.2874232
+    },
+    {
+      "year": 1969,
+      "anomaly": -0.206611,
+      "moving_avg_5yr": -0.29870260000000004
+    },
+    {
+      "year": 1970,
+      "anomaly": -0.254636,
+      "moving_avg_5yr": -0.2908912
+    },
+    {
+      "year": 1971,
+      "anomaly": -0.378524,
+      "moving_avg_5yr": -0.24666700000000003
+    },
+    {
+      "year": 1972,
+      "anomaly": -0.275224,
+      "moving_avg_5yr": -0.28012620000000005
+    },
+    {
+      "year": 1973,
+      "anomaly": -0.11834,
+      "moving_avg_5yr": -0.2889434
+    },
+    {
+      "year": 1974,
+      "anomaly": -0.373907,
+      "moving_avg_5yr": -0.2893012
+    },
+    {
+      "year": 1975,
+      "anomaly": -0.298722,
+      "moving_avg_5yr": -0.254355
+    },
+    {
+      "year": 1976,
+      "anomaly": -0.380313,
+      "moving_avg_5yr": -0.26983619999999997
+    },
+    {
+      "year": 1977,
+      "anomaly": -0.100493,
+      "moving_avg_5yr": -0.21209240000000001
+    },
+    {
+      "year": 1978,
+      "anomaly": -0.195746,
+      "moving_avg_5yr": -0.1587512
+    },
+    {
+      "year": 1979,
+      "anomaly": -0.085188,
+      "moving_avg_5yr": -0.08041899999999999
+    },
+    {
+      "year": 1980,
+      "anomaly": -0.032016,
+      "moving_avg_5yr": -0.0842484
+    },
+    {
+      "year": 1981,
+      "anomaly": 0.011348,
+      "moving_avg_5yr": -0.0357658
+    },
+    {
+      "year": 1982,
+      "anomaly": -0.11964,
+      "moving_avg_5yr": -0.0476206
+    },
+    {
+      "year": 1983,
+      "anomaly": 0.046667,
+      "moving_avg_5yr": -0.0722488
+    },
+    {
+      "year": 1984,
+      "anomaly": -0.144462,
+      "moving_avg_5yr": -0.0896412
+    },
+    {
+      "year": 1985,
+      "anomaly": -0.155157,
+      "moving_avg_5yr": -0.0514102
+    },
+    {
+      "year": 1986,
+      "anomaly": -0.075614,
+      "moving_avg_5yr": -0.04457660000000001
+    },
+    {
+      "year": 1987,
+      "anomaly": 0.071515,
+      "moving_avg_5yr": -0.019245199999999997
+    },
+    {
+      "year": 1988,
+      "anomaly": 0.080835,
+      "moving_avg_5yr": 0.038981
+    },
+    {
+      "year": 1989,
+      "anomaly": -0.017805,
+      "moving_avg_5yr": 0.069595
+    },
+    {
+      "year": 1990,
+      "anomaly": 0.135974,
+      "moving_avg_5yr": 0.04005460000000001
+    },
+    {
+      "year": 1991,
+      "anomaly": 0.077456,
+      "moving_avg_5yr": 0.017688200000000005
+    },
+    {
+      "year": 1992,
+      "anomaly": -0.076187,
+      "moving_avg_5yr": 0.0276698
+    },
+    {
+      "year": 1993,
+      "anomaly": -0.030997,
+      "moving_avg_5yr": 0.0318636
+    },
+    {
+      "year": 1994,
+      "anomaly": 0.032103,
+      "moving_avg_5yr": 0.018617199999999997
+    },
+    {
+      "year": 1995,
+      "anomaly": 0.156943,
+      "moving_avg_5yr": 0.0742214
+    },
+    {
+      "year": 1996,
+      "anomaly": 0.011224,
+      "moving_avg_5yr": 0.14825300000000002
+    },
+    {
+      "year": 1997,
+      "anomaly": 0.201834,
+      "moving_avg_5yr": 0.1672852
+    },
+    {
+      "year": 1998,
+      "anomaly": 0.339161,
+      "moving_avg_5yr": 0.15834520000000002
+    },
+    {
+      "year": 1999,
+      "anomaly": 0.127264,
+      "moving_avg_5yr": 0.2075936
+    },
+    {
+      "year": 2000,
+      "anomaly": 0.112243,
+      "moving_avg_5yr": 0.2287414
+    },
+    {
+      "year": 2001,
+      "anomaly": 0.257466,
+      "moving_avg_5yr": 0.22601439999999995
+    },
+    {
+      "year": 2002,
+      "anomaly": 0.307573,
+      "moving_avg_5yr": 0.2544294
+    },
+    {
+      "year": 2003,
+      "anomaly": 0.325526,
+      "moving_avg_5yr": 0.3028406
+    },
+    {
+      "year": 2004,
+      "anomaly": 0.269339,
+      "moving_avg_5yr": 0.3157918
+    },
+    {
+      "year": 2005,
+      "anomaly": 0.354299,
+      "moving_avg_5yr": 0.3154404
+    },
+    {
+      "year": 2006,
+      "anomaly": 0.322222,
+      "moving_avg_5yr": 0.2962776
+    },
+    {
+      "year": 2007,
+      "anomaly": 0.305816,
+      "moving_avg_5yr": 0.30853339999999996
+    },
+    {
+      "year": 2008,
+      "anomaly": 0.229712,
+      "moving_avg_5yr": 0.31962199999999996
+    },
+    {
+      "year": 2009,
+      "anomaly": 0.330618,
+      "moving_avg_5yr": 0.3073162
+    },
+    {
+      "year": 2010,
+      "anomaly": 0.409742,
+      "moving_avg_5yr": 0.3105488
+    },
+    {
+      "year": 2011,
+      "anomaly": 0.260693,
+      "moving_avg_5yr": 0.3364824
+    },
+    {
+      "year": 2012,
+      "anomaly": 0.321979,
+      "moving_avg_5yr": 0.355541
+    },
+    {
+      "year": 2013,
+      "anomaly": 0.35938,
+      "moving_avg_5yr": 0.3965496
+    },
+    {
+      "year": 2014,
+      "anomaly": 0.425911,
+      "moving_avg_5yr": 0.4807378
+    },
+    {
+      "year": 2015,
+      "anomaly": 0.614785,
+      "moving_avg_5yr": 0.5352354
+    },
+    {
+      "year": 2016,
+      "anomaly": 0.681634,
+      "moving_avg_5yr": 0.5652712
+    },
+    {
+      "year": 2017,
+      "anomaly": 0.594467,
+      "moving_avg_5yr": 0.6067895999999999
+    },
+    {
+      "year": 2018,
+      "anomaly": 0.509559,
+      "moving_avg_5yr": 0.6173162
+    },
+    {
+      "year": 2019,
+      "anomaly": 0.633503,
+      "moving_avg_5yr": 0.5874072
+    },
+    {
+      "year": 2020,
+      "anomaly": 0.667418,
+      "moving_avg_5yr": 0.5776324
+    },
+    {
+      "year": 2021,
+      "anomaly": 0.532089,
+      "moving_avg_5yr": NaN
+    },
+    {
+      "year": 2022,
+      "anomaly": 0.545593,
+      "moving_avg_5yr": NaN
+    }
+  ],
+  "decadal_averages": {
+    "decades": [
+      "1880s",
+      "1890s",
+      "1900s",
+      "1910s",
+      "1920s",
+      "1930s",
+      "1940s",
+      "1950s",
+      "1960s",
+      "1970s",
+      "1980s",
+      "1990s",
+      "2000s",
+      "2010s",
+      "2020s"
+    ],
+    "values": [
+      -0.4808117,
+      -0.545066,
+      -0.6104271,
+      -0.610956,
+      -0.5172323000000001,
+      -0.4072958,
+      -0.2172193,
+      -0.32207810000000003,
+      -0.28936850000000003,
+      -0.2461093,
+      -0.0334329,
+      0.0974775,
+      0.2814814,
+      0.48116529999999996,
+      0.5817
+    ]
+  },
+  "statistics": {
+    "start_year": 1880,
+    "end_year": 2022,
+    "total_years": 143,
+    "warming_rate_per_decade": 0.0725,
+    "warmest_year": {
+      "year": 2016,
+      "anomaly": 0.6816
+    },
+    "coldest_year": {
+      "year": 1904,
+      "anomaly": -0.7565
+    }
+  }
+}

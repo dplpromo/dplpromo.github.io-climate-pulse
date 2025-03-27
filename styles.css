@@ -1,0 +1,116 @@
+/* 
+ * Climate Pulse - Custom CSS Styles
+ * A visualization of global temperature trends
+ */
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --warm-color: #dc3545;
+  --cool-color: #0dcaf0;
+  --neutral-color: #6c757d;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+header {
+  background: linear-gradient(135deg, var(--primary-color), #0a4fa8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.badge {
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: rgba(13, 110, 253, 0.05);
+  border-bottom: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+.card-header h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.year-range-selector {
+  width: 300px;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+footer {
+  background: linear-gradient(135deg, #212529, #343a40);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .year-range-selector {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  header .col-md-4 {
+    text-align: left !important;
+    margin-top: 1rem;
+  }
+}
+
+/* Temperature gradient colors for charts */
+.temp-gradient-warm {
+  background: linear-gradient(to right, #ffc107, #fd7e14, #dc3545);
+}
+
+.temp-gradient-cool {
+  background: linear-gradient(to right, #0dcaf0, #0d6efd);
+}
+
+/* Custom styling for range slider */
+input[type="range"] {
+  height: 8px;
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background: var(--primary-color);
+}
+
+/* Animation for loading state */
+.loading {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
