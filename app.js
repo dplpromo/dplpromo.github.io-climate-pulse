@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 async function loadClimateData() {
     try {
-        const response = await fetch('./climate_data.json');
+        const response = await fetch('https://dplpromo.github.io/dplpromo.github.io-climate-pulse/climate_data.json');
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
