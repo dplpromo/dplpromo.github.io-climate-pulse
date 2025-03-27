@@ -6,7 +6,7 @@
 // API endpoint for climate data
 const CONFIG = {
     // Path to the climate data JSON file
-    dataUrl: 'data/climate_data.json',
+    dataUrl: 'climate_data.json',
     
     // Chart colors
     colors: {
