@@ -3,12 +3,12 @@
     {
       "year": 1880,
       "anomaly": -0.428016,
-      "moving_avg_5yr": NaN
+      "moving_avg_5yr": null
     },
     {
       "year": 1881,
       "anomaly": -0.389853,
-      "moving_avg_5yr": NaN
+      "moving_avg_5yr": null
     },
     {
       "year": 1882,
