@@ -490,3 +490,4 @@ function updateChartsWithYearRange() {
     updateDecadalChart();
     updateDistributionChart();
 }
+
