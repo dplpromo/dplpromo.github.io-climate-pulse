@@ -319,102 +319,86 @@ function createDistributionChart() {
  * Update the distribution chart based on selected years
  */
 function updateDistributionChart() {
-    const startYearSelect = document.getElementById('start-year');
-    const endYearSelect = document.getElementById('end-year');
-    
-    const startYear = parseInt(startYearSelect.value);
-    const endYear = parseInt(endYearSelect.value);
-    
-    // Validate range
-    if (startYear > endYear) {
-        alert('Start year must be less than or equal to end year');
-        startYearSelect.value = endYear;
-        return;
-    }
+    const startYear = parseInt(document.getElementById('start-year').value);
+    const endYear = parseInt(document.getElementById('end-year').value);
     
     // Filter data for selected range
     const filteredData = climateData.annual_data.filter(
         d => d.year >= startYear && d.year <= endYear
     );
     
-    // Calculate average for the period
-    const avgTemp = filteredData.reduce((sum, d) => sum + d.anomaly, 0) / filteredData.length;
-    
-    // Prepare data for chart
-    const years = filteredData.map(d => d.year);
+    // Calculate distribution data
     const anomalies = filteredData.map(d => d.anomaly);
+    const min = Math.min(...anomalies);
+    const max = Math.max(...anomalies);
+    const binWidth = (max - min) / CONFIG.distribution.bins;
     
-    // Create or update chart
+    // Create bins
+    const bins = new Array(CONFIG.distribution.bins).fill(0);
+    anomalies.forEach(value => {
+        const binIndex = Math.min(
+            Math.floor((value - min) / binWidth),
+            CONFIG.distribution.bins - 1
+        );
+        bins[binIndex]++;
+    });
+    
+    // Create labels for bin ranges
+    const labels = bins.map((_, i) => {
+        const start = (min + i * binWidth).toFixed(2);
+        const end = (min + (i + 1) * binWidth).toFixed(2);
+        return `${start}°C to ${end}°C`;
+    });
+    
+    // Update or create chart
     if (distributionChart) {
-        distributionChart.data.labels = years;
-        distributionChart.data.datasets[0].data = anomalies;
-        distributionChart.options.plugins.annotation.annotations.line.value = avgTemp;
-        distributionChart.update();
-    } else {
-        distributionChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: years,
-                datasets: [{
-                    label: 'Temperature Anomaly',
-                    data: anomalies,
-                    backgroundColor: anomalies.map(val => 
-                        val >= 0 ? CONFIG.colors.temperature : CONFIG.colors.average
-                    )
-                }]
+        distributionChart.destroy();
+    }
+    
+    const ctx = document.getElementById('distribution-chart').getContext('2d');
+    distributionChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Temperature Distribution',
+                data: bins,
+                backgroundColor: CONFIG.distribution.barColor,
+                borderColor: CONFIG.distribution.barColor.replace(/[\d.]+\)$/, '1)'),
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            animation: {
+                duration: CONFIG.animationDuration
             },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                animation: {
-                    duration: CONFIG.animationDuration
-                },
-                scales: {
-                    y: {
-                        title: {
-                            display: true,
-                            text: 'Temperature Anomaly (°C)'
-                        }
-                    },
-                    x: {
-                        ticks: {
-                            maxTicksLimit: 10,
-                            callback: function(val, index) {
-                                const year = this.getLabelForValue(val);
-                                return index % Math.ceil(years.length / 10) === 0 ? year : '';
-                            }
-                        }
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Frequency'
                     }
                 },
-                plugins: {
-                    annotation: {
-                        annotations: {
-                            line: {
-                                type: 'line',
-                                yMin: avgTemp,
-                                yMax: avgTemp,
-                                borderColor: 'rgba(0, 0, 0, 0.5)',
-                                borderWidth: 2,
-                                borderDash: [6, 4],
-                                label: {
-                                    content: `Average: ${avgTemp.toFixed(3)}°C`,
-                                    enabled: true,
-                                    position: 'end'
-                                }
-                            }
-                        }
-                    },
-                    tooltip: {
-                        callbacks: {
-                            title: function(context) {
-                                return `Year: ${context[0].label}`;
-                            }
-                        }
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Temperature Anomaly Range'
+                    }
+                }
+            },
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: (items) => items[0].label,
+                        label: (item) => `Count: ${item.raw}`
                     }
                 }
             }
-        });
-    }
+        }
+    });
 }
 
 /**
@@ -425,32 +409,65 @@ function filterDataByYearRange(data) {
 }
 
 /**
- * Calculate trend line data points
+ * Calculate trend line for temperature data
  */
 function calculateTrendLine(data) {
-    // Simple linear regression
     const n = data.length;
     const years = data.map(d => d.year);
-    const temps = data.map(d => d.anomaly);
+    const anomalies = data.map(d => d.anomaly);
     
     // Calculate means
-    const meanYear = years.reduce((sum, y) => sum + y, 0) / n;
-    const meanTemp = temps.reduce((sum, t) => sum + t, 0) / n;
+    const meanYear = years.reduce((a, b) => a + b) / n;
+    const meanAnomaly = anomalies.reduce((a, b) => a + b) / n;
     
     // Calculate slope and intercept
     let numerator = 0;
     let denominator = 0;
     
     for (let i = 0; i < n; i++) {
-        numerator += (years[i] - meanYear) * (temps[i] - meanTemp);
+        numerator += (years[i] - meanYear) * (anomalies[i] - meanAnomaly);
         denominator += Math.pow(years[i] - meanYear, 2);
     }
     
     const slope = numerator / denominator;
-    const intercept = meanTemp - slope * meanYear;
+    const intercept = meanAnomaly - slope * meanYear;
     
     // Generate trend line points
     return years.map(year => slope * year + intercept);
+}
+
+/**
+ * Update decadal chart with new year range
+ */
+function updateDecadalChart() {
+    if (!decadalChart) return;
+    
+    // Filter decades based on year range
+    const filteredDecades = climateData.decadal_averages.decades.filter(
+        decade => parseInt(decade) >= yearRange.min && parseInt(decade) <= yearRange.max
+    );
+    
+    // Get corresponding values
+    const filteredValues = filteredDecades.map(decade => 
+        climateData.decadal_averages.values[
+            climateData.decadal_averages.decades.indexOf(decade)
+        ]
+    );
+    
+    // Update colors
+    const colors = filteredValues.map(value => 
+        value >= 0 
+            ? CONFIG.colors.warm
+            : CONFIG.colors.cool
+    );
+    
+    // Update chart data
+    decadalChart.data.labels = filteredDecades;
+    decadalChart.data.datasets[0].data = filteredValues;
+    decadalChart.data.datasets[0].backgroundColor = colors;
+    decadalChart.data.datasets[0].borderColor = colors.map(c => c.replace(/[\d.]+\)$/, '1)'));
+    
+    decadalChart.update();
 }
 
 /**
@@ -467,6 +484,9 @@ function updateChartsWithYearRange() {
     temperatureChart.data.datasets[0].data = filteredData.map(d => d.anomaly);
     temperatureChart.data.datasets[1].data = filteredData.map(d => d.moving_avg_5yr);
     temperatureChart.data.datasets[2].data = calculateTrendLine(filteredData);
-    
     temperatureChart.update();
+    
+    // Update other charts
+    updateDecadalChart();
+    updateDistributionChart();
 }
