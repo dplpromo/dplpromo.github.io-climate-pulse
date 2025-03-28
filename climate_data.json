@@ -1,4 +1,18 @@
 {
+  "statistics": {
+    "start_year": 1880,
+    "end_year": 2021,
+    "total_years": 142,
+    "warming_rate_per_decade": 0.08,
+    "warmest_year": {
+      "year": 2016,
+      "anomaly": 0.681634
+    },
+    "coldest_year": {
+      "year": 1904,
+      "anomaly": -0.756484
+    }
+  },
   "annual_data": [
     {
       "year": 1880,
